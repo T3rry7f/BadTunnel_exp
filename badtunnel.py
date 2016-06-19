@@ -67,7 +67,6 @@ if __name__ == "__main__":
 		print ("[*] NetBIOS request from %s:%s..."%(addr[0],addr[1]))
 		transaction_id=parse_nbns(data)
 		if(transaction_id>0):
-			
 			index=binascii.b2a_hex(transaction_id)
 			print ("Start sending payload data...")
 			for i in range(int(index,16)-TRANSACTION_ID_BLOCK,int(index,16)+TRANSACTION_ID_BLOCK):
