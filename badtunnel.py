@@ -55,8 +55,7 @@ if __name__ == "__main__":
 		usage()
 		exit()
 	else:
-		wpad_server_ip= binascii.a2b_hex(convert_ipv4_address(sys.argv[1]))
-		print wpad_server_ip	
+		wpad_server_ip= binascii.a2b_hex(convert_ipv4_address(sys.argv[1]))	
 	badTunnel = socket(AF_INET, SOCK_DGRAM)  
 	badTunnel.bind(ADDR)  
   
